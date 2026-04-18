@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Maintenance Hub</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 20px; line-height: 1.5; }
+    header { margin-bottom: 18px; }
+    .muted { color: #666; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 14px; margin: 14px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    h1 { margin: 0 0 6px 0; }
+    h2 { margin: 0 0 10px 0; }
+    ul { margin: 8px 0 0 18px; }
+    li { margin: 6px 0; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; border: 1px solid #ddd; font-size: 12px; margin-left: 8px; }
+    .overdue { border-color: #d92d20; color: #d92d20; }
+    .due { border-color: #f79009; color: #b54708; }
+    .ok { border-color: #12b76a; color: #027a48; }
+    code { background: #f5f5f5; padding: 1px 6px; border-radius: 6px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+</head>
+<body>
 
+<header>
+  <h1>🏠 Home Maintenance Hub</h1>
+  <div class="muted">Quick status, due-soon list, and links to detailed equipment pages.</div>
+  <div class="muted">Last updated: <span class="mono">YYYY-MM-DD</span></div>
+</header>
+
+<div class="grid">
+
+  <section class="card">
+    <h2>🚨 Overdue / Action Needed</h2>
+    <ul>
+      <li><strong>Water Heater</strong> — Flush tank <span class="pill overdue">Overdue</span> — equipment/water-heater.htmlOpen page</a></li>
+      <li><strong>Furnace</strong> — Replace filter <span class="pill due">Due soon</span> — <a href="equipment/furnace.html">Open page</a></li>
+      <!-- Add items as needed -->
+    </ul>
+    <p class="muted">Tip: keep this list short. If it’s not overdue or due soon, it can live in the schedules below.</p>
+  </section>
+
+  <section class="card">
+    <h2>📅 Due Soon (Next 30–90 Days)</h2>
+    <ul>
+      <li><strong>Sump Pump</strong> — Test float + run test <span class="pill due">Due</span> — <a href="equipment/sump-pump.html">Open page</a></li>
+      <li><strong>Air Compressor</strong> — Drain tank + check oil <span class="pill ok">Planned</span> — <a href="equipment/air-compressor.html">Open page</a></li>
+      <!-- Add items as needed -->
+    </ul>
+  </section>
+
+</div>
+
+<section class="card">
+  <h2>🧭 Quick Links</h2>
+  <ul>
+    <li><a href="index.html">Equipment Index</a> (master list)</li>
+    <li><a href="equipment/water-heater.html">Water Heater</a></li>
+    <li><a href="equipment/furnace.html">Furnace</a></li>
+    <li><a href="equipment/sump-pump.html">Sump Pump</a></li>
+    <!-- Add your equipment pages here -->
+  </ul>
+</section>
+
+<section class="card">
+  <h2>🛠 Maintenance Entry Standard</h2>
+  <p>Use this format everywhere (append‑only):</p>
+  <p class="mono">YYYY-MM-DD – Action performed – Result / condition</p>
+
+  <h3>✅ Quick Entry Checklist</h3>
+  <ul>
+    <li>Date in ISO format (<code>YYYY-MM-DD</code>)</li>
+    <li>One primary action word: <em>Inspected / Tested / Cleaned / Flushed / Adjusted / Repaired / Replaced / Installed / Failed</em></li>
+    <li>Outcome in plain language (<em>Normal / No issues / Monitor / Improved / Failed</em>)</li>
+    <li>No sensitive info (no serials, invoices, account numbers, access codes)</li>
+  </ul>
+
+  <h3>✅ Examples</h3>
+  <ul>
+    <li class="mono">2026-04-18 – Water heater flushed – Moderate sediment</li>
+    <li class="mono">2025-11-02 – Pressure relief valve tested – Normal</li>
+    <li class="mono">2024-01-10 – Anode rod replaced – Original rod 40% depleted</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>📝 Change Log (for this hub page)</h2>
+  <ul>
+    <li class="mono">YYYY-MM-DD – Hub page created – Baseline established</li>
+  </ul>
+</section>
+
+<footer class="muted" style="margin-top: 18px;">
+  <div>Public page note: Do not include serial numbers, invoices, passwords, or private contact details.</div>
+</footer>
+
+</body>
+</html>
