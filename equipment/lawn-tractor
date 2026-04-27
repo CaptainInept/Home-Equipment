@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Maintenance Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Equipment Maintenance Template</h1>
+        <section class="equipment-details">
+            <h2>Equipment Details</h2>
+            <p>Name: _________________</p>
+            <p>Model: _________________</p>
+            <p>Serial Number: _________________</p>
+            <p>Purchase Date: _________________</p>
+        </section>
+        <section class="manuals">
+            <h2>Manuals</h2>
+            <p>Link to manuals: <a href="#">Download Manuals</a></p>
+        </section>
+        <section class="maintenance-history">
+            <h2>Maintenance History</h2>
+            <ul>
+                <li>Date: _______________ - Description: ___________________</li>
+                <li>Date: _______________ - Description: ___________________</li>
+                <li>Date: _______________ - Description: ___________________</li>
+            </ul>
+        </section>
+        <section class="maintenance-checklist">
+            <h2>Maintenance Checklist</h2>
+            <ul>
+                <li><input type="checkbox"> Task 1</li>
+                <li><input type="checkbox"> Task 2</li>
+                <li><input type="checkbox"> Task 3</li>
+            </ul>
+        </section>
+        <section class="warranty-information">
+            <h2>Warranty Information</h2>
+            <p>Warranty Period: _________________</p>
+            <p>Contact Information: _________________</p>
+        </section>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #e7e7e7;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+</style>
